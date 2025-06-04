@@ -70,7 +70,6 @@ jobs:
               repo: context.repo.repo,
               branch: targetBranch
             });
-            const baseSha = baseBranch.commit.sha;
 
             const { data: prs } = await github.rest.pulls.list({
               owner: context.repo.owner,
@@ -83,7 +82,7 @@ jobs:
               const comparison = await github.rest.repos.compareCommits({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                base: baseSha,
+                base: `refs/heads/${targetBranch}`,
                 head: pr.head.sha
               });
 
