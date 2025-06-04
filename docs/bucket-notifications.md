@@ -97,7 +97,7 @@ The list of supported events are:
 - s3:ObjectRestore:*
 - s3:ObjectRestore:Post
 - s3:ObjectRestore:Completed
-- s3:ObjectRestore:Delete
+- s3:ObjectRestore:Deletedddddddd
 - s3:ObjectTagging:*
 - s3:ObjectTagging:Put
 - s3:ObjectTagging:Delete
