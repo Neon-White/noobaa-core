@@ -10,7 +10,7 @@ A notification json has these fields:
           If not specified, the notification is relevant for all events.
 - TopicArn: The connection file (see below). (To specify a Kafka target topic, see "Kafka Connection Fields" below).
 
-Note that in alignment with AWS notification configuration, a test notification is sent to the external server during put-bucket-notification-configuration execution.
+Note that in alignment with AWS notification configuration, a test notification is sent to the external server during put-bucket-notification-configuration execution.dddddddddddd
 A successful test notification is a prequisite for the put-bucket-notification-configuration op.
 
 Example for a bucket's notification configuration on containerized environment, in a file:
