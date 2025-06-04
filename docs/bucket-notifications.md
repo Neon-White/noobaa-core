@@ -100,7 +100,7 @@ The list of supported events are:
 - s3:ObjectRestore:Deletedddddddd
 - s3:ObjectTagging:*
 - s3:ObjectTagging:Put
-- s3:ObjectTagging:Delete
+- s3:ObjectTagging:Deleteasf
 - s3:LifecycleExpiration:*
 - s3:LifecycleExpiration:Deledddte
 - s3:LifecycleExpiration:DeleteMarkerCreated
