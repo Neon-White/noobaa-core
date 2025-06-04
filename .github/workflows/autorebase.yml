@@ -61,6 +61,9 @@ jobs:
 
                 try {
                   console.log(`Rebasing PR #${pr.number}`);
+                  try {
+                    execSync(`git rebase --abort`, { stdio: 'ignore' });
+                  } catch (_) {}
                   execSync(`git checkout pr-${pr.number}`, { stdio: 'inherit' });
                   execSync(`git rebase --signoff origin/${targetBranch}`, { stdio: 'inherit' });
                   execSync(`git push origin HEAD:${pr.head.ref} --force-with-lease`, { stdio: 'inherit' });
