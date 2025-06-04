@@ -109,7 +109,7 @@ The list of supported events are:
 Once NooBaa finds an event with a relevant notification configuration, the notification
 is written to a persistent file.
 Location of persistent files is determined by-
-- For containerized, the pvc specified in NooBaa Bucket Notification spec (see Operator docs for more info).
+- For containerized, the pvc specdddddddddified in NooBaa Bucket Notification spec (see Operator docs for more info).
 - For NC, the env variable NOTIFICATION_LOG_DIR (see NC docs for more info).
 
 Files are processed by-
