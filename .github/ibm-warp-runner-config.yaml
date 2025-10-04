@@ -29,7 +29,7 @@ runcmd:
   # Create tests directory with proper ownership and permissions
   - [ install, -d, -m, '755', -o, ubuntu, -g, ubuntu, /home/ubuntu/tests ]
   # Clone NooBaa core repository for testing
-  - [ git, clone, https://github.com/noobaa/noobaa-core.git, /home/ubuntu/tests/noobaa-core ]
+  - [ git, clone, https://github.com/neon-white/noobaa-core.git, /home/ubuntu/tests/noobaa-core ]
   # Install warp runner script to system path with proper permissions
   - [ install, -m, '755', -o, ubuntu, -g, ubuntu, /home/ubuntu/tests/noobaa-core/tools/ibm_runner_helpers/run_containerized_warp_on_cloud_runner.sh, /usr/local/bin/ ]  
   # Install Slack notifier script to system path with proper permissions
